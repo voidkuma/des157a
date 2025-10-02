@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Experiment 1</h1>
+    <h2>Right click to inspect the page, then go to console so you can see functionality of the code!</h2>
+
+    <script>
+        /* 
+            Goal of this is to: Write a loop that makes seven calls to console.log to output the following   triangle:
+            #
+            ##
+            ###
+            ####
+            #####
+            ######
+            #######
+        */
+
+        var mod = "#"; // Holds the value of "#" to later be added to our following variable output
+        var output = "" // Output will be what the console shows in the console log, it starts off empty
+
+        /*
+            In this following for-loop, we start with i=0 and with every loop the output gets modified by mod growing the output value one by one each loop. 
+
+            This means, in the first loop the output will gain one mod, while in the second loop it will add another one, then another one in the following loop. Growing with each and every loop. This loop will continue until i reaches value 6, creating 7 outputs to the console.
+        */
+
+        // loop!!!
+        for( i=0; i<7; i++){ 
+            output += mod; //Adds "#" to output
+            console.log(output);
+        }
+
+
+    </script>
+
+
+</body>
+</html>
