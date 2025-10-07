@@ -42,7 +42,7 @@ header{
   #banner section{
     display: flex;
     justify-content: space-around;
-    margin-top: 15px;
+        margin-top: 15px;
     
   }
 
