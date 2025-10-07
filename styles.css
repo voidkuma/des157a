@@ -31,17 +31,26 @@ header{
       background-position: 0% 50%;
     }
   }
+  #banner h1{
+    margin: 0px;
+  }
+
+  #banner h2{
+    margin: 15px;
+  }
+
   #banner section{
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
     
   }
 
   #banner div{
-    height: 90px;
-    width: 90px;
+    height: 50px;
+    width: 50px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50px;
   }
 
   #banner div:hover{
