@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex2</title>
+</head>
+<body>
+    <h1>Exercise 2</h1>
+
+    <p></p>
+    
+<script>
+    //So this program prompts the user to input a color up to 3 times until they get the right answer. If they get the right answer they will get a message telling them so, if they're incorrect they will get a message saying they're wrong. Again they have three tries to get the correct answer, if they answer incorrectly they will have to refresh the page to start with three new attempts. 
+
+    // Array of possible correct color answers
+    var colors = ["red", "yellow", "green", "blue"];
+
+    // Random number generator function
+    function randomInt(min, max){
+        return Math.floor((max - min + 1)*Math.random()) + min;
+    }
+
+    // random color from colors array using number from randomInt
+    var randomColor = colors[randomInt(0, colors.length -1)];
+    // console.log(randomColor);
+
+    // function that checks if the user input matches with randomcolor 
+    // takes two inputs: userColor and randomColor
+    // displays a message depending on correctness.
+    function result(userColor, randomColor){
+        var message = "";
+        if(userColor == randomColor){
+            message = `Congrats ${userColor} was the correct color!`;
+        }
+        else {
+            message = `Whoops ${userColor} was not the correct color!`;
+        }
+        return message; 
+    }
+
+    //For loop that starts everything 
+    //allows user to try 3 times without having to refresh page
+    //prompts user and calls the function result(userColor, randomColor) until correct
+    for(var i=0; i<3; i++){
+        // Asks user to input a color
+        var userColor = prompt("Can you guess what color I'm thinking of?", " ");
+
+        if (userColor == randomColor){
+            var displayedResult = document.querySelector('p');
+            displayedResult.innerHTML = result(userColor, randomColor);
+            break;
+        }
+        else{
+            // selects the p tag from the document
+            var displayedResult = document.querySelector('p');
+            // changes the selected p tag's inner text to output of result(userColor, randomColor)
+            displayedResult.innerHTML = result(userColor, randomColor);        
+        }
+    }
+</script>
+
+</body>
+</html>
