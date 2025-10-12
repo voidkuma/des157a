@@ -47,8 +47,9 @@ main{
     width: 50%;
     text-align: justify;
     margin: auto;
+    line-height: 25px;
 }
-section{
+article{
         background-color: white;
         padding: 40px;
 }
