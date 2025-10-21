@@ -1,0 +1,108 @@
+body{
+    background-image: linear-gradient(to bottom, #D0D6B5, #B9CC66);
+}
+
+header{
+    text-align: center;
+    font-size: 2em;
+    padding: 30px;
+    background-color: #75B9BE;
+    color: white;
+}
+
+main{
+
+}
+
+#h2form{
+    display: flex;
+    justify-content: space-between;
+}
+
+#cats{
+
+}
+
+h2{
+    border-color: white;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    height: fit-content;
+    position: relative;
+    top: 300px;
+    left: 310px;
+}
+
+form{
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 350px;
+    position: relative;
+    top: 40px;
+    right: 50px;
+    z-index: 1;
+}
+
+form fieldset{
+    border: none;
+    text-align: left;
+    font-size: 1.2em;
+}
+form legend{
+    text-align: center;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+form button{
+    width: 100%;
+    border-radius: 6px;
+    background-color: #EE7674;
+    color: white;
+    padding: 6px;
+    margin-top: 5px;
+    border: none;
+}
+
+#greyCat{
+    width: 15%;
+    position: absolute;
+    bottom: 80px;
+    left: 150px;
+}
+#orangeCat{
+    width: 25%;
+    position: absolute;
+    right: 450px;
+    bottom: 4px;
+}
+#rug{
+width: 900px;
+    height: 190px;
+    position: relative;
+    left: 150px;
+}
+
+article{
+    background-color: #987284;
+    position: relative;
+    padding: 8px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Therapy Madlibs</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <!-- my stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        Cat Therapy Madlibs
+    </header>
+
+    <main>
+        <section id="h2form">
+            <!-- p tag asking cat to begin filling questions -->
+            <h2>What brings you here today?</h2>
+
+            <!-- Code for the form questions -->
+            <form method="post">
+                <!-- merging all the questions together because they're of the same type  -->
+                <fieldset>
+                    <legend>Fill Out Pateint Form </legend>
+
+                    <label for="adjective">Adjective
+                        <input id="adjective" name="adjective" type="text" required>
+                    </label>
+                    
+                    <label for="verb">Verb
+                        <input id="verb" name="verb" type="text" required>
+                    </label>
+
+                    <label for="person">Name of a person
+                        <input id="person" name="person" type="text" required>
+                    </label>
+
+                    <label for="noun">Noun
+                        <input id="noun" name="noun" type="text" required>
+                    </label>
+                    
+                    <label for="color">Color
+                        <input id="color" name="color" type="text" required>
+                    </label>
+
+                    <button type="submit">Generate!</button>
+                </fieldset>
+            </form>
+        </section>
+
+
+
+        <article>
+            <img src="images/Ellipse 1.png" alt="rug" id="rug">
+            <img src="images/greycat.png" alt="greyCat" id="greyCat">
+            <img src="images/orangeCat.png" alt="orangeCat" id="orangeCat">
+        </article>
+    </main>
+
+</body>
+</html>
