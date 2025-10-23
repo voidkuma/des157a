@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Therapy Madlibs</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <!-- my stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        Cat Therapy Madlibs
+    </header>
+
+    <main>
+        <section id="h2form">
+            <!-- p tag asking cat to begin filling questions -->
+            <h2>What brings you here today?</h2>
+
+            <!-- Code for the form questions -->
+            <form id="myform">
+                <!-- merging all the questions together because they're of the same type  -->
+                <fieldset>
+                    <legend id="title">Fill Out Pateint Form </legend>
+
+                    <label for="person">Name of a person
+                        <input id="person" type="text" >
+                    </label>
+
+                    <label for="noun">Noun
+                        <input id="noun" type="text" >
+                    </label>
+
+                    <label for="adjective">Adjective
+                        <input id="adjective" type="text" >
+                    </label>
+                    
+                    <label for="verb">Verb
+                        <input id="verb" type="text" >
+                    </label>
+                    
+                    <label for="color">Color
+                        <input id="color" type="text" >
+                    </label>
+
+                    <button type="submit">Generate!</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+
+
+        <article>
+            <img src="images/Ellipse.png" alt="rug" id="rug">
+            <img src="images/greycat.png" alt="greyCat" id="greyCat">
+            <img src="images/orangeCat.png" alt="orangeCat" id="orangeCat">
+        </article>
+
+        <section id="madlib" class="hidden">
+            <article>
+                <h2><u>Session Summary</u></h2>
+                <div>
+                    <img src="images/homie.jpg" alt="kitten">
+                    <img src="images/homieLoaf.jpg" alt="loaf">
+                </div>
+                <section id="text">
+
+                </section>
+                <button type="click">close</button>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>
