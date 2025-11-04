@@ -1,0 +1,53 @@
+body{
+    width: 1200px;
+    height: 750px;
+}
+header{
+    text-align: center;
+}
+
+main{
+
+}
+
+.artProcess {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.artProcess img {
+    position: absolute; 
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.artProcess img.sketch {
+    opacity: 1;
+    z-index: 1; 
+}
+
+.artProcess img.line {
+    opacity: 0;
+    z-index: 2;
+}
+
+.artProcess img.final {
+    opacity: 0;
+    z-index: 3;
+}
+
+.artProcess:hover img.sketch {
+    opacity: 1;
+}
+
+.artProcess:hover img.line {
+    opacity: 1;
+    transition-delay: 0.8s; 
+}
+
+.artProcess:hover img.final {
+    opacity: 1;
+    transition-delay: 3s;
+}
