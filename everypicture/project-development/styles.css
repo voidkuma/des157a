@@ -1,0 +1,26 @@
+body{
+    margin: auto;
+}
+header{
+    text-align: center;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    color: white;
+    padding: 5px;
+    width: 100%;
+}
+main{
+    display: flex;
+}
+#image{
+    flex: 1;
+}
+#content{
+    flex: 1;
+    text-align: start;
+    line-height: 25px;
+    padding: 10px;
+    margin: 3%;
+}
+/* img{
+    display: block;
+} */
