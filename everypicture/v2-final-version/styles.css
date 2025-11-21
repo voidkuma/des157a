@@ -1,3 +1,9 @@
+img {
+    border-style: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
 /* Banner */
 
 #banner {
@@ -34,20 +40,57 @@ main{
 /* Desk Image Map */
 
 .deskImgMap{
-    display: flex;
+
 }
 
 #desk {
-    flex: 2;
-
-    background-image: url(images/desk.jpeg);
-    background-size: cover;
-    background-position: right;
+    position: relative;  
+    width: 100%;            
+    max-width: 800px;  
+    margin: auto;
+    aspect-ratio: 1 / 1;     
+    overflow: hidden;  
+    height: 500px;
+}
+#desk img {
+    position: absolute;
+    inset: 0;                 /* top:0; left:0; right:0; bottom:0 */
+    width: 100%;
+    object-fit: cover;        /* keeps proportions */
+    border-radius: 0;    
+}
+#desk svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    opacity: 0;                  
 }
 
-svg{
-    opacity: 0;
-    position: relative;
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+#overlay{
+    background-color: #fff;
+    padding: 10px;
+    width: 25vw;
+    height: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    top: 970px;
+    right: 700px;
+}
+
+#overlay p{
+
+}
+
+#exit{
+    text-align: right;
+    margin: 5px;
 }
 
 #objectInfo{
@@ -63,13 +106,6 @@ svg{
     text-align: justify;
 }
 
-
-/* Testing for glow effect */
-.glow {
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))
-          drop-shadow(0 0 20px rgba(255, 192, 203, 0.6));
-  transition: filter 0.3s ease;
-}
 
 /* Inspo Slide Show */
 
@@ -87,7 +123,7 @@ svg{
 
 #myimage{
     width: 100%;
-
+border-radius: 0;
 }
 
 
@@ -126,28 +162,17 @@ svg{
 
 .part3{
     background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-#processTitle h1{
-    background-color: white;
-    padding: 20px;
-    border-style: solid;
-    width: fit-content;
-    position: absolute;
-    left: 40px;
-}
-#processDescription p{
-    position: relative;
-    background-color: white;
-    border-style: solid;
-    width: 30%;
-    height: fit-content;
-    left: 65%;
-    bottom: 10px;
-    padding: 10px;
-    text-align: justify;
-    object-position: left;
-    margin-top: 10px;
+#processTitle{
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2;
 }
 
 .artProcess {
@@ -155,6 +180,7 @@ svg{
     width: 50%;
     margin: auto;
     aspect-ratio: 1 / 1;
+    flex: 3;
 }
 
 .artProcess img {

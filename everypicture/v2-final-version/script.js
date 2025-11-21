@@ -4,7 +4,15 @@
     console.log('reading JS');
 
     // selects the description id in my html, saves it into a variable
-    const description = document.querySelector('#description');
+    const description = document.querySelector('#overlay');
+    const descriptionImg = document.querySelector('#overlay img');
+    const descriptionTXT = document.querySelector('#descriptTXT');
+
+    const closeOverlay = document.querySelector('#exit');
+
+    closeOverlay.addEventListener('click', function(){
+        document. querySelector('#overlay').className = 'hidden';
+    });
 
     //Folllowing event listeners are for parts of a image map for the items section.
 
@@ -12,71 +20,75 @@
     document.querySelector('#computer').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/monitorImg.jpeg" width="100%">
-                    <h3>Monitor</h3>
-                    <p>Here is my monitor, where I view my digital pieces in detail and bring my sketches to life through color and refinement.</p>
-        
-        `;
+        description.className = 'showing';
+        descriptionImg.src = `images/monitorImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Monitor</h3> <p>Here is my monitor, where I view my digital pieces in detail and bring my sketches to life through color and refinement.</p>`;
+
     });
 
     // selects the keyboard id and adds a Event for when it gets clicked.
     document.querySelector('#keyboard').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/keyboardImg.jpeg" width="100%">
-                    <h3>Keyboard</h3>
-                    <p>Here is my keyboard, which I use to navigate programs, research art references, and sometimes add digital touches to my work.</p> 
-                    `;
+        description.className = 'showing';
+        descriptionImg.src = `images/keyboardImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Keyboard</h3>
+                    <p>Here is my keyboard, which I use to navigate programs, research art references, and sometimes add digital touches to my work.</p> `;
     });
 
     // selects the pencilPouch id and adds a Event for when it gets clicked.
     document.querySelector('#pencilPouch').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/pouchImg.jpeg" width="100%">
-                    <h3>Pencil Pouch</h3>
-                    <p>Here is my pencil pouch, where I keep essential tools and colorful markers and pens that help bring my drawings to life.</p> 
-                    `;
+
+        description.className = 'showing';
+        descriptionImg.src = `images/pouchImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Pencil Pouch</h3>
+                    <p>Here is my pencil pouch, where I keep essential tools and colorful markers and pens that help bring my drawings to life.</p>`;
     });
 
     // selects the tablet id and adds a Event for when it gets clicked.
     document.querySelector('#tablet').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/tabletImg.jpeg" width="100%">
-                    <h3>Tablet</h3>
-                    <p>Here is my tablet. I use it for digital drawing, layering colors, and refining my work with precision that’s hard to get on paper.</p> 
-                    `;
+
+        description.className = 'showing';
+        descriptionImg.src = `images/tabletImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Tablet</h3>
+                    <p>Here is my tablet. I use it for digital drawing, layering colors, and refining my work with precision that’s hard to get on paper.</p> `;
     });
 
     // selects the book id and adds a Event for when it gets clicked.
     document.querySelector('#book').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/bookImg.jpeg" width="100%">
-                    <h3>Sketch Book</h3>
-                    <p>Here is my book. I like to flip through it for ideas, notes, or quick sketches when I need inspiration or want to study different styles.</p> 
-                    `;
+
+        description.className = 'showing';
+        descriptionImg.src = `images/bookImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Sketch Book</h3>
+                    <p>Here is my book. I like to flip through it for ideas, notes, or quick sketches when I need inspiration or want to study different styles.</p>`;
     });
 
     // selects the pencils id and adds a Event for when it gets clicked.
     document.querySelector('#pencils').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/pencilsImg.jpeg" width="100%">
-                    <h3>Pencils</h3>
-                    <p>Here are my pencils. I use them all the time to sketch and create traditional drawings before adding any color or digital touches.</p> 
-                    `;
+
+        description.className = 'showing';
+        descriptionImg.src = `images/pencilsImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Pencils</h3>
+                    <p>Here are my pencils. I use them all the time to sketch and create traditional drawings before adding any color or digital touches.</p> `;
     });
 
     // selects the lamp id and adds a Event for when it gets clicked.
     document.querySelector('#lamp').addEventListener('click', function(){
         // when clicked, the description div's inneHTML gets changed
         // Changes to a image of the item with a description.
-        description.innerHTML = `                    <img src="images/lampImg.jpeg" width="100%">
-                    <h3>Smiski Lamp</h3>
-                    <p>Here is my lamp. It’s small but just the right size for my workspace, adding a little flare of cuteness and light to keep me focused while I draw.</p> 
-                    `;
+
+        description.className = 'showing';
+        descriptionImg.src = `images/lampImg.jpeg`;
+        descriptionTXT.innerHTML = `<h3>Smiski Lamp</h3>
+                    <p>Here is my lamp. It’s small but just the right size for my workspace, adding a little flare of cuteness and light to keep me focused while I draw.</p> `;
     });
 
     // array that holds 5 image names

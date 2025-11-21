@@ -19,9 +19,15 @@
 
     <main>
         <section class="deskImgMap">
+            <div id="objectInfo">
+                <h1>Part 1: Materials</h1>
+                <p style="opacity: 50%;">click on any object see if something happens!</p>
+            </div>
+
             <div id="desk">
-                <!-- <img src="images/desk.jpeg" alt="desk" width="100%"> -->
                 
+                <img src="images/desk.jpeg" alt="desk" width="100%">
+                   
                 <svg viewBox="0 0 1000 659" fill="none" xmlns="http://www.w3.org/2000/svg">
                         
                         <path d="M738.5 327L733 342.5C737.4 347.7 738.5 354.333 738.5 357C740.5 357.8 744.667 360.667 746.5 362C755.3 366 757.167 370 757 371.5C759.4 373.1 767 372.167 770.5 371.5L773 369.5C775.8 367.5 780.167 367.333 782 367.5C787.6 361.1 795 362.167 798 363.5C802.4 359.1 803.167 348.667 803 344C820.2 328.8 811.167 311 804.5 304C814.9 300.8 823.167 287.333 826 281C832.4 261 820.333 246.667 813.5 242C815.1 239.6 814.167 237.667 813.5 237C816.3 234.2 816.667 231.5 816.5 230.5C821.3 223.7 816.5 222.667 813.5 223C809.9 217.8 802 218.5 798.5 219.5V213.5C800.5 199.9 792.667 203.833 788.5 207.5L784.5 206.5C780.9 196.1 775.333 205.167 773 211C767.5 226 779 229.5 776.5 230.5C774.5 231.3 773.333 233.833 773 235C733.4 251 743.833 281.667 754 295C734 301.4 735.333 319 738.5 327Z" fill="#C0C0C0" id="lamp"/>
@@ -39,14 +45,15 @@
                 </svg>
             </div>
 
-            <div id="objectInfo">
-                <p style="opacity: 50%;">click on any object see if something happens!</p>
-                <h1>Part 1: Materials</h1>
-                <div id="description">
- 
-                </div>
-                
+            <div id="overlay" class="hidden">
+                <p id="exit"><strong>X</strong></p>
+                <img src="images/monitorImg.jpeg">
+                <section id="descriptTXT">
+                    <h3>Monitor</h3>
+                    <p>Here is my monitor, where I view my digital pieces in detail and bring my sketches to life through color and refinement.</p>
+                </section>
             </div>
+
         </section>
 
         <section class="part2">
@@ -65,6 +72,7 @@
         <section class="part3">
             <div id="processTitle">
                 <h1>Part 3: Draw!</h1>
+                <p>Hover over the image to see the progress grow! It's really satifying to look back at all the progress after it's all done.</p>
             </div>
 
             <div class="artProcess">
@@ -73,9 +81,9 @@
                 <img src="images/colored.png" alt="final Art" class="final">
             </div>
 
-            <div id="processDescription">
+            <!-- <div id="processDescription">
                 <p>It's really satifying to look back at all the progress after it's all done.</p>
-            </div>
+            </div> -->
 
         </section>
 
