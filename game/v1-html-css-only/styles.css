@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(169, 214, 232);
+}
+header{
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+
+}
+
+button{
+    
+}
