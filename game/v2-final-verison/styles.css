@@ -60,6 +60,13 @@ button{
     padding: 15px;
 }
 
+#startGame{
+    transition: background-color 0.5s ease;
+}
+#startGame:hover{
+    background-color: rgb(187, 207, 220);
+}
+
 #roundResult{
     margin: auto;
     
@@ -112,4 +119,9 @@ button{
     background-color: white;
     border-style: inset;
     color: black;
+    transition: background-color 0.5s ease;
+}
+
+#restartButton:hover{
+    background-color: rgb(187, 220, 199);
 }
