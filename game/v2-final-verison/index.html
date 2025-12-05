@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL GAME ON</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Rock - Paper - Scissors</h1>
+        <p>
+            In this game, you’ll play as a heroic cat facing off against the evil computer cat in a classic battle of Rock, Paper, Scissors. Your goal is simple: be the first to win three rounds. Choose Rock, Paper, or Scissors each turn, and remember the rules: Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. Choose wisely, stay sharp, and claw your way to victory!
+        </p>
+    </header>
+
+
+    <section id="game">
+        <div class="catCard" id="greyCat">
+            <img id="playerIMG" src="images/Grey_Cat.png" alt="greyCat">
+            <h2 id="user">YOU:</h2>
+        </div>
+        <button class="showing" id="startGame">START</button>
+        <div class="hidden" id="roundResult"></div>
+        <div class="catCard" id="evilCat">
+            <img id="evilCatIMG" src="images/Evil_Cat.png" alt="greyCat">
+            <h2 id="computer">EVIL E-CAT:</h2>
+        </div>
+    </section>
+
+    
+
+    <section class="hidden" id="gameDisplay">
+        <div id="optionSection">
+            <h2>Choose One!</h2>
+            <div>
+                <button class="playerButtons" onclick="startGame('rock')"><img src="images/Rock.png" alt="rock"></button>
+                <button class="playerButtons" onclick="startGame('paper')"><img src="images/paper.png" alt="paper"></button>
+                <button class="playerButtons" onclick="startGame('scissors')"><img src="images/scissors.png" alt="scissors"></button>
+            </div>
+        </div>
+    </section>
+
+    <section style="text-align: center;">
+        <h1 class="hidden" id="scoreCount">0:0</h1>
+        <button id="restartButton" class="hidden">Play Again?</button>
+    </section>
+
+</body>
+</html>
